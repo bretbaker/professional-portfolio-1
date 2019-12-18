@@ -22,8 +22,8 @@
     <title>Bret Baker Web Development</title>
   </head>
 
-  <body class="bg-dark">
-    <div class="container">
+  <body class="bg-white">
+    <div class="container shadow">
       <header id="main-header">
         <div class="row no-gutters">
           <div
@@ -37,22 +37,26 @@
                 <div
                   class="d-flex flex-row justify-content-between align-items-center"
                 >
-                  <h1 class="display-4">Bret Baker</h1>
-                  <div>
-                    <a href="http://linkedin.com" class="text-white">
-                      <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="http://github.com" class="text-white">
-                      <i class="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
+                  <h1 id="main-name" class="display-4 mr-auto">Bret Baker</h1>
+                  <a
+                    href="http://linkedin.com"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                  <a
+                    href="http://github.com"
+                    class="btn btn-outline-light ml-3"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
                 </div>
               </div>
 
               <div class="p-4 bg-black">
-                <h4 class="mb-0">JavaScript Developer</h4>
+                <h3 class="mb-0">JavaScript Developer</h3>
               </div>
 
               <div>
@@ -143,6 +147,7 @@
             <li>MongoDB</li>
             <li>API</li>
             <li>JSON</li>
+            <li>Git</li>
             <li>Heroku</li>
           </ul>
         </div>
@@ -153,22 +158,10 @@
         <div class="card card-body bg-warning text-white py-5">
           <h2>My Projects</h2>
           <p class="lead">
-            Below are six of my most recent projects.
+            Below are six projects that I have worked on recently.
           </p>
         </div>
-
-        <div class="card card-body py-5 bg-secondary">
-          <h4><strong>Developer Social Network</strong></h4>
-          <img
-            style="width: 300px;"
-            src="https://picsum.photos/seed/picsum/200/300"
-            alt=""
-          />
-          <p>
-            A social network for software developers, this project is built with
-            React, Redux, Node, Express, MongoDB, Mongoose, HTML, CSS, and more.
-          </p>
-        </div>
+        <!-- first project here -->
       </div>
 
       <!-- RESUME -->
@@ -176,16 +169,12 @@
         <div class="card card-body bg-success text-white py-5">
           <h2>My Resume</h2>
           <p class="lead">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!
+            I am a college graduate and I recently completed a web development
+            bootcamp.
           </p>
         </div>
 
         <div class="card card-body py-5 bg-secondary">
-          <h3>Where Have I Worked?</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            similique saepe inventore rem vitae esse.
-          </p>
           <div class="card-deck">
             <div class="card">
               <div class="card-body">
@@ -318,12 +307,22 @@
 
       <!-- FOOTER -->
       <footer id="main-footer" class="p-5 bg-black text-white">
-        <div class="row">
-          <div class="col-md-6">
-            <a href="#" class="btn btn-outline-light">
-              <i class="fas fa-cloud"></i> Download Resume
-            </a>
-          </div>
+        <div class="d-flex flex-row justify-content-around align-items-center">
+          <a
+            href="http://linkedin.com"
+            class="btn btn-lg btn-outline-light"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <p>Copyright &copy; <span id="year"></span></p>
+          <a
+            href="http://github.com"
+            class="btn btn-lg btn-outline-light"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </footer>
     </div>
@@ -346,14 +345,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <script>
-      $('.port-item').click(function() {
-        $('.collapse').collapse('hide');
+      $(".port-item").click(function() {
+        $(".collapse").collapse("hide");
       });
 
-      $(document).on('click', '[data-toggle="lightbox"]', function(e) {
+      $(document).on("click", '[data-toggle="lightbox"]', function(e) {
         e.preventDefault();
         $(this).ekkoLightbox();
       });
+
+      $("#year").text(new Date().getFullYear());
     </script>
   </body>
 </html>
