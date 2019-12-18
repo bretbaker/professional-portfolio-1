@@ -1,0 +1,25 @@
+#main-header img {
+  width: 90%;
+  /* padding: 5px; */
+  /* border: solid 1px white; */
+}
+
+#main-header .port-item {
+  width: 30%;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.bg-black {
+  color: #fff;
+  background: #000;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
