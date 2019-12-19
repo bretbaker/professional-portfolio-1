@@ -1,7 +1,20 @@
+/* font-family: 'Gelasio', serif;
+font-family: 'Roboto Mono', monospace; */
+
+body {
+  background-image: url('../img/background-1.jpg');
+  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#main-name,
+#job-title,
+.second-header {
+  font-family: 'Gelasio', serif;
+}
+
 #main-header img {
   width: 90%;
-  /* padding: 5px; */
-  /* border: solid 1px white; */
 }
 
 #main-header .port-item {
@@ -9,8 +22,15 @@
 }
 
 #main-header .port-item:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
+}
+.collapse {
+  opacity: 0.97;
+}
+
+#text-area {
+  height: 200px;
 }
 
 .bg-black {

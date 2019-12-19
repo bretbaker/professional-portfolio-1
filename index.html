@@ -18,18 +18,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gelasio|Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Bret Baker Web Development</title>
   </head>
 
-  <body class="bg-white">
+  <body>
     <div class="container shadow">
       <header id="main-header">
         <div class="row no-gutters">
           <div
-            class="col-lg-4 col-md-5  d-flex align-items-center justify-content-center bg-black"
+            class="col-lg-4 col-md-5  d-flex align-items-center justify-content-center bg-white"
           >
-            <img class="rounded" src="img/headshot-1.jpg" alt="" />
+            <img class="rounded shadow" src="img/headshot-1.jpg" alt="" />
           </div>
           <div class="col-lg-8 col-md-7">
             <div class="d-flex flex-column">
@@ -37,17 +41,22 @@
                 <div
                   class="d-flex flex-row justify-content-between align-items-center"
                 >
-                  <h1 id="main-name" class="display-4 mr-auto">Bret Baker</h1>
+                  <h1
+                    id="main-name"
+                    class="display-4 mr-auto pr-5 border-right border-light"
+                  >
+                    Bret Baker
+                  </h1>
                   <a
                     href="http://linkedin.com"
-                    class="btn btn-outline-light"
+                    class="btn btn-outline-light ml-5"
                     target="_blank"
                   >
                     <i class="fab fa-linkedin"></i> LinkedIn
                   </a>
                   <a
                     href="http://github.com"
-                    class="btn btn-outline-light ml-3"
+                    class="btn btn-outline-light ml-5"
                     target="_blank"
                   >
                     <i class="fab fa-github"></i> GitHub
@@ -56,7 +65,7 @@
               </div>
 
               <div class="p-4 bg-black">
-                <h3 class="mb-0">JavaScript Developer</h3>
+                <h3 id="job-title" class="mb-0 ml-4">JavaScript Developer</h3>
               </div>
 
               <div>
@@ -105,7 +114,8 @@
       <!-- HOME -->
       <div id="home" class="collapse show">
         <div class="card card-body bg-primary text-white py-5">
-          <h2>Welcome To My Page</h2>
+          <h2 class="second-header">Welcome To My Page</h2>
+          <hr />
           <p class="lead">
             I am a JavaScript Developer experienced with React, Node, Express,
             MySQL, MongoDB, HTML, CSS, and more. I earned a B.S. Economics from
@@ -116,11 +126,7 @@
         </div>
 
         <div class="card card-body py-5 bg-secondary">
-          <h3>My Skills</h3>
-          <p>
-            Below are the languages, libraries, and technologies that I have
-            utilized.
-          </p>
+          <h3 class="second-header">My Skills</h3>
           <hr />
           <h4>Languages:</h4>
           <ul>
@@ -130,7 +136,7 @@
             <li>SQL</li>
           </ul>
           <h4>
-            Libraries:
+            Libraries/Frameworks:
           </h4>
           <ul>
             <li>React</li>
@@ -140,15 +146,16 @@
             <li>Sequelize</li>
             <li>Mongoose</li>
             <li>jQuery</li>
+            <li>Bootstrap</li>
           </ul>
           <h4>Technologies:</h4>
           <ul>
             <li>MySQL</li>
             <li>MongoDB</li>
-            <li>API</li>
-            <li>JSON</li>
+            <li>REST APIs</li>
             <li>Git</li>
             <li>Heroku</li>
+            <li>Firebase</li>
           </ul>
         </div>
       </div>
@@ -156,10 +163,8 @@
       <!-- PROJECTS -->
       <div id="work" class="collapse">
         <div class="card card-body bg-warning text-white py-5">
-          <h2>My Projects</h2>
-          <p class="lead">
-            Below are six projects that I have worked on recently.
-          </p>
+          <h2 class="second-header">My Projects</h2>
+          <hr />
         </div>
         <!-- first project here -->
       </div>
@@ -167,90 +172,21 @@
       <!-- RESUME -->
       <div id="resume" class="collapse">
         <div class="card card-body bg-success text-white py-5">
-          <h2>My Resume</h2>
-          <p class="lead">
-            I am a college graduate and I recently completed a web development
-            bootcamp.
-          </p>
-        </div>
-
-        <div class="card card-body py-5 bg-secondary">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Devmasters</h4>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolor, magnam.
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Position: Full Stack Developer
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Phone: (444) 444-4444
-                </p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">Dates: 2015 - 2018</h6>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">123 Designs</h4>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolor, magnam.
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Position: Web Designer
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Phone: (222) 222-2222
-                </p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">Dates: 2013 - 2015</h6>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Web Designer Pros</h4>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolor, magnam.
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Position: Web Designer
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Phone: (333) 333-3333
-                </p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">Dates: 2010 - 2013</h6>
-              </div>
-            </div>
-          </div>
+          <h2 class="second-header">My Resume</h2>
+          <hr />
         </div>
       </div>
 
       <!-- CONTACT -->
       <div id="contact" class="collapse">
         <div class="card card-body bg-danger text-white py-5">
-          <h2>Contact</h2>
-          <p class="lead">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!
-          </p>
+          <h2 class="second-header">Contact</h2>
+          <hr />
         </div>
 
         <div class="card card-body py-5 bg-secondary">
-          <h3>Get In Touch</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos
-            illo, dicta id voluptates enim.
-          </p>
+          <h3 class="second-header">Send Me an Email</h3>
+          <hr />
           <form>
             <div class="form-group">
               <div class="input-group input-group-lg">
@@ -290,17 +226,16 @@
                   </span>
                 </div>
                 <textarea
+                  id="text-area"
                   class="form-control bg-dark text-white"
-                  placeholder="Name"
+                  placeholder="Message"
                 ></textarea>
               </div>
             </div>
 
-            <input
-              type="submit"
-              value="Submit"
-              class="btn btn-danger btn-block btn-lg"
-            />
+            <button class="btn btn-danger btn-block btn-lg">
+              <i class="fas fa-paper-plane"></i> Send
+            </button>
           </form>
         </div>
       </div>
@@ -310,7 +245,7 @@
         <div class="d-flex flex-row justify-content-around align-items-center">
           <a
             href="http://linkedin.com"
-            class="btn btn-lg btn-outline-light"
+            class="btn btn-outline-light"
             target="_blank"
           >
             <i class="fab fa-linkedin"></i> LinkedIn
@@ -318,7 +253,7 @@
           <p>Copyright &copy; <span id="year"></span></p>
           <a
             href="http://github.com"
-            class="btn btn-lg btn-outline-light"
+            class="btn btn-outline-light"
             target="_blank"
           >
             <i class="fab fa-github"></i> GitHub
@@ -345,16 +280,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <script>
-      $(".port-item").click(function() {
-        $(".collapse").collapse("hide");
+      $('.port-item').click(function() {
+        $('.collapse').collapse('hide');
       });
 
-      $(document).on("click", '[data-toggle="lightbox"]', function(e) {
+      $(document).on('click', '[data-toggle="lightbox"]', function(e) {
         e.preventDefault();
         $(this).ekkoLightbox();
       });
 
-      $("#year").text(new Date().getFullYear());
+      $('#year').text(new Date().getFullYear());
     </script>
   </body>
 </html>
