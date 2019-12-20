@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css?family=Gelasio|Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
     <title>Bret Baker Web Development</title>
   </head>
 
@@ -31,13 +31,13 @@
       <header id="main-header">
         <div class="row no-gutters">
           <div
-            class="col-lg-4 col-md-5  d-flex align-items-center justify-content-center bg-white"
+            class="col-lg-4 col-md-5  d-flex align-items-center justify-content-center bg-dark rounded"
           >
-            <img class="rounded shadow" src="img/headshot-1.jpg" alt="" />
+            <img class="rounded" src="/img/headshot-1.jpg" alt="" />
           </div>
           <div class="col-lg-8 col-md-7">
             <div class="d-flex flex-column">
-              <div class="p-5 bg-secondary text-white">
+              <div class="p-5 bg-secondary text-white" id="name-box">
                 <div
                   class="d-flex flex-row justify-content-between align-items-center"
                 >
@@ -126,66 +126,110 @@
         </div>
 
         <div class="card card-body py-5 bg-secondary">
-          <h3 class="second-header">My Skills</h3>
+          <h3><i class="fas fa-file-code inline-block"></i> My Skills</h3>
           <hr />
-          <h4>Languages:</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL</li>
-          </ul>
-          <h4>
-            Libraries/Frameworks:
-          </h4>
-          <ul>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>Sequelize</li>
-            <li>Mongoose</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-          </ul>
-          <h4>Technologies:</h4>
-          <ul>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>REST APIs</li>
-            <li>Git</li>
-            <li>Heroku</li>
-            <li>Firebase</li>
-          </ul>
+          <div>
+            <i class="fab fa-css3-alt fa-4x float-right ml-5"></i>
+            <i class="fab fa-html5 fa-4x float-right ml-5"></i>
+            <i class="fab fa-js fa-4x float-right"></i>
+            <h4>Languages:</h4>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div>
+            <i class="fab fa-bootstrap fa-4x float-right ml-5"></i>
+            <i class="fab fa-node-js fa-4x float-right ml-5"></i>
+            <i class="fab fa-react fa-4x float-right"></i>
+            <h4>
+              Libraries/Frameworks:
+            </h4>
+            <ul>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>Sequelize</li>
+              <li>Mongoose</li>
+              <li>jQuery</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div>
+            <i class="fas fa-code-branch fa-4x float-right ml-5"></i>
+            <i class="fab fa-git-alt fa-4x float-right ml-5"></i>
+            <i class="fas fa-database fa-4x float-right"></i>
+            <h4>Technologies:</h4>
+            <ul>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>REST APIs</li>
+              <li>Git</li>
+              <li>Heroku</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <!-- PROJECTS -->
       <div id="work" class="collapse">
-        <div class="card card-body bg-warning text-white py-5">
-          <h2 class="second-header">My Projects</h2>
-          <hr />
+        <div class="card card-body bg-warning text-white py-4">
+          <h2 class="second-header mb-0">My Projects</h2>
         </div>
         <!-- first project here -->
       </div>
 
       <!-- RESUME -->
       <div id="resume" class="collapse">
-        <div class="card card-body bg-success text-white py-5">
-          <h2 class="second-header">My Resume</h2>
-          <hr />
+        <div class="card card-body bg-success text-white py-4">
+          <h2 class="second-header mb-0">My Resume</h2>
+        </div>
+        <div
+          class="card card-body py-5 bg-secondary d-flex flex-row justify-content-around"
+        >
+          <div class="inline-block p-5 border border-dark rounded shadow">
+            <h4>
+              <i class="fas fa-graduation-cap inline-block"></i> Education:
+            </h4>
+            <hr />
+            <h5>Web Development Bootcamp</h5>
+            <ul>
+              <li>UCLA Extension</li>
+              <li>Los Angeles, CA</li>
+              <li>November 2019</li>
+            </ul>
+            <h5>B.S. Economics</h5>
+            <ul>
+              <li>Florida State University</li>
+              <li>Tallahassee, FL</li>
+              <li>August 2016</li>
+            </ul>
+          </div>
+          <div class="inline-block p-5 border border-dark rounded shadow">
+            <h4><i class="fas fa-briefcase inline-block"></i> Occupation:</h4>
+            <hr />
+            <h5>Paralegal</h5>
+            <ul>
+              <li>Sponsler, Bishop, Koren & Hammer, P.A.</li>
+              <li>Tampa, FL</li>
+              <li>October 2016 - June 2018</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <!-- CONTACT -->
       <div id="contact" class="collapse">
-        <div class="card card-body bg-danger text-white py-5">
-          <h2 class="second-header">Contact</h2>
-          <hr />
+        <div class="card card-body bg-danger text-white py-4">
+          <h2 class="second-header mb-0">Contact</h2>
         </div>
 
         <div class="card card-body py-5 bg-secondary">
-          <h3 class="second-header">Send Me an Email</h3>
+          <h4 class="mb-0">Send Me a Message</h4>
           <hr />
           <form>
             <div class="form-group">

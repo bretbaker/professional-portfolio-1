@@ -1,20 +1,19 @@
-/* font-family: 'Gelasio', serif;
-font-family: 'Roboto Mono', monospace; */
-
 body {
   background-image: url('../img/background-1.jpg');
   background-size: cover;
   font-family: 'Roboto Mono', monospace;
 }
 
+/* font-family: 'Gelasio', serif;
+font-family: 'Roboto Mono', monospace; */
+
 #main-name,
 #job-title,
 .second-header {
   font-family: 'Gelasio', serif;
 }
-
 #main-header img {
-  width: 90%;
+  width: 100%;
 }
 
 #main-header .port-item {
@@ -27,6 +26,12 @@ body {
 }
 .collapse {
   opacity: 0.97;
+}
+
+#name-box,
+#main-footer,
+#job-title {
+  opacity: 0.8;
 }
 
 #text-area {
