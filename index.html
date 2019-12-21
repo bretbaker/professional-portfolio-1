@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Gelasio|Roboto+Mono&display=swap"
+      href="https://fonts.googleapis.com/css?family=Gelasio&display=swap"
       rel="stylesheet"
     />
     <link type="text/css" rel="stylesheet" href="/css/style.css" />
@@ -30,80 +30,89 @@
     <div class="container shadow">
       <header id="main-header">
         <div class="row no-gutters">
-          <div
-            class="col-lg-4 col-md-5  d-flex align-items-center justify-content-center bg-dark rounded"
-          >
-            <img class="rounded" src="/img/headshot-1.jpg" alt="" />
-          </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="d-flex flex-column">
-              <div class="p-5 bg-secondary text-white" id="name-box">
-                <div
-                  class="d-flex flex-row justify-content-between align-items-center"
+          <div class="d-flex flex-column w-100">
+            <div class="p-4 bg-secondary text-white" id="name-box">
+              <div class="d-flex justify-content-around align-items-center">
+                <a
+                  href="http://linkedin.com"
+                  class="top-small-icons"
+                  target="_blank"
                 >
-                  <h1
-                    id="main-name"
-                    class="display-4 mr-auto pr-5 border-right border-light"
-                  >
-                    Bret Baker
-                  </h1>
-                  <a
-                    href="http://linkedin.com"
-                    class="btn btn-outline-light ml-5"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                  </a>
-                  <a
-                    href="http://github.com"
-                    class="btn btn-outline-light ml-5"
-                    target="_blank"
-                  >
-                    <i class="fab fa-github"></i> GitHub
-                  </a>
+                  <i class="fab fa-linkedin fa-2x text-white"></i>
+                </a>
+                <a
+                  href="http://linkedin.com"
+                  class="top-ss-icons"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin fa-lg text-white"></i>
+                </a>
+                <h1
+                  id="main-name"
+                  class="display-4 mb-0 border-bottom border-light"
+                >
+                  Bret Baker
+                </h1>
+                <a
+                  href="http://github.com"
+                  class="top-small-icons"
+                  target="_blank"
+                >
+                  <i class="fab fa-github fa-2x text-white"></i>
+                </a>
+                <a
+                  href="http://github.com"
+                  class="top-ss-icons"
+                  target="_blank"
+                >
+                  <i class="fab fa-github fa-lg text-white"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="p-3 text-center bg-black">
+              <h3 id="job-title" class="mb-0">JavaScript Developer</h3>
+            </div>
+
+            <div>
+              <div
+                class="d-flex flex-row text-white align-items-stretch text-center"
+              >
+                <div
+                  class="port-item p-4 bg-primary"
+                  data-toggle="collapse"
+                  data-target="#home"
+                >
+                  <i class="fas fa-home fa-2x d-block pi-norm"></i>
+                  <i class="fas fa-home fa-lg d-block pi-sm"></i>
+                  <span class="d-none d-sm-block">Home</span>
                 </div>
-              </div>
-
-              <div class="p-4 bg-black">
-                <h3 id="job-title" class="mb-0 ml-4">JavaScript Developer</h3>
-              </div>
-
-              <div>
                 <div
-                  class="d-flex flex-row text-white align-items-stretch text-center"
+                  class="port-item p-4 bg-warning"
+                  data-toggle="collapse"
+                  data-target="#work"
                 >
-                  <div
-                    class="port-item p-4 bg-primary"
-                    data-toggle="collapse"
-                    data-target="#home"
-                  >
-                    <i class="fas fa-home fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Home</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-warning"
-                    data-toggle="collapse"
-                    data-target="#work"
-                  >
-                    <i class="fas fa-folder-open fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Projects</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-success"
-                    data-toggle="collapse"
-                    data-target="#resume"
-                  >
-                    <i class="fas fa-laptop-code fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Experience</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-danger"
-                    data-toggle="collapse"
-                    data-target="#contact"
-                  >
-                    <i class="fas fa-envelope fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Contact</span>
-                  </div>
+                  <i class="fas fa-folder-open fa-2x d-block pi-norm"></i>
+                  <i class="fas fa-folder-open fa-lg d-block pi-sm"></i>
+                  <span class="d-none d-sm-block">Projects</span>
+                </div>
+                <div
+                  class="port-item p-4 bg-success"
+                  data-toggle="collapse"
+                  data-target="#resume"
+                >
+                  <i class="fas fa-laptop-code fa-2x d-block pi-norm"></i>
+                  <i class="fas fa-laptop-code fa-lg d-block pi-sm"></i>
+                  <span class="d-none d-sm-block">Experience</span>
+                </div>
+                <div
+                  class="port-item p-4 bg-danger"
+                  data-toggle="collapse"
+                  data-target="#contact"
+                >
+                  <i class="fas fa-envelope fa-2x d-block pi-norm"></i>
+                  <i class="fas fa-envelope fa-lg d-block pi-sm"></i>
+                  <span class="d-none d-sm-block">Contact</span>
                 </div>
               </div>
             </div>
@@ -114,7 +123,7 @@
       <!-- HOME -->
       <div id="home" class="collapse show">
         <div class="card card-body bg-primary text-white py-5">
-          <h2 class="second-header">Welcome To My Page</h2>
+          <h2 class="second-header text-center">Welcome To My Page</h2>
           <hr />
           <p class="lead">
             I am a JavaScript Developer experienced with React, Node, Express,
@@ -126,12 +135,14 @@
         </div>
 
         <div class="card card-body py-5 bg-secondary">
-          <h3><i class="fas fa-file-code inline-block"></i> My Skills</h3>
+          <h3 id="skills-head" class="text-center">
+            <i class="fas fa-file-code inline-block"></i> My Skills
+          </h3>
           <hr />
           <div>
-            <i class="fab fa-css3-alt fa-4x float-right ml-5"></i>
-            <i class="fab fa-html5 fa-4x float-right ml-5"></i>
-            <i class="fab fa-js fa-4x float-right"></i>
+            <i class="fab fa-css3-alt fa-4x float-right ml-5 skills-icon"></i>
+            <i class="fab fa-html5 fa-4x float-right ml-5 skills-icon"></i>
+            <i class="fab fa-js fa-4x float-right skills-icon"></i>
             <h4>Languages:</h4>
             <ul>
               <li>JavaScript</li>
@@ -141,9 +152,9 @@
             </ul>
           </div>
           <div>
-            <i class="fab fa-bootstrap fa-4x float-right ml-5"></i>
-            <i class="fab fa-node-js fa-4x float-right ml-5"></i>
-            <i class="fab fa-react fa-4x float-right"></i>
+            <i class="fab fa-bootstrap fa-4x float-right ml-5 skills-icon"></i>
+            <i class="fab fa-node-js fa-4x float-right ml-5 skills-icon"></i>
+            <i class="fab fa-react fa-4x float-right skills-icon"></i>
             <h4>
               Libraries/Frameworks:
             </h4>
@@ -159,9 +170,11 @@
             </ul>
           </div>
           <div>
-            <i class="fas fa-code-branch fa-4x float-right ml-5"></i>
-            <i class="fab fa-git-alt fa-4x float-right ml-5"></i>
-            <i class="fas fa-database fa-4x float-right"></i>
+            <i
+              class="fas fa-code-branch fa-4x float-right ml-5 skills-icon"
+            ></i>
+            <i class="fab fa-git-alt fa-4x float-right ml-5 skills-icon"></i>
+            <i class="fas fa-database fa-4x float-right skills-icon"></i>
             <h4>Technologies:</h4>
             <ul>
               <li>MySQL</li>
@@ -178,20 +191,60 @@
       <!-- PROJECTS -->
       <div id="work" class="collapse">
         <div class="card card-body bg-warning text-white py-4">
-          <h2 class="second-header mb-0">My Projects</h2>
+          <h2 class="second-header mb-0 text-center">My Projects</h2>
         </div>
-        <!-- first project here -->
+        <div class="card card-body py-4 bg-secondary">
+          <h4 class="mb-0 proj-header">Developer Social Network</h4>
+          <hr />
+          <div
+            class="d-flex justify-content-around align-items-center proj-img-div"
+          >
+            <img class="w-25 proj-img" src="/img/project-1-mobile.JPG" alt="" />
+            <img class="w-25 proj-img" src="/img/project-1-mobile.gif" alt="" />
+            <img
+              class="w-75 proj-img-sm mb-3"
+              src="/img/project-1-mobile.JPG"
+              alt=""
+            />
+            <img
+              class="w-75 proj-img-sm"
+              src="/img/project-1-mobile.gif"
+              alt=""
+            />
+          </div>
+          <hr />
+          <h5 class="site-source">
+            Site -
+            <a
+              class="text-white"
+              href="https://devhub-mern-z.herokuapp.com/"
+              target="_blank"
+              >https://devhub-mern-z.herokuapp.com/</a
+            >
+          </h5>
+          <h5 class="site-source">
+            Source -
+            <a
+              class="text-white"
+              href="https://github.com/bretbaker808/devhub-mern-z"
+              target="_blank"
+              >https://github.com/bretbaker808/devhub-mern-z</a
+            >
+          </h5>
+        </div>
       </div>
 
       <!-- RESUME -->
       <div id="resume" class="collapse">
         <div class="card card-body bg-success text-white py-4">
-          <h2 class="second-header mb-0">My Resume</h2>
+          <h2 class="second-header mb-0 text-center">My Resume</h2>
         </div>
         <div
-          class="card card-body py-5 bg-secondary d-flex flex-row justify-content-around"
+          class="card card-body py-5 bg-secondary d-flex flex-row justify-content-around exp-container"
         >
-          <div class="inline-block p-5 border border-dark rounded shadow">
+          <div
+            class="inline-block p-5 border border-dark rounded shadow exp-card"
+          >
             <h4>
               <i class="fas fa-graduation-cap inline-block"></i> Education:
             </h4>
@@ -209,7 +262,9 @@
               <li>August 2016</li>
             </ul>
           </div>
-          <div class="inline-block p-5 border border-dark rounded shadow">
+          <div
+            class="inline-block p-5 border border-dark rounded shadow exp-card"
+          >
             <h4><i class="fas fa-briefcase inline-block"></i> Occupation:</h4>
             <hr />
             <h5>Paralegal</h5>
@@ -225,13 +280,17 @@
       <!-- CONTACT -->
       <div id="contact" class="collapse">
         <div class="card card-body bg-danger text-white py-4">
-          <h2 class="second-header mb-0">Contact</h2>
+          <h2 class="second-header mb-0 text-center">Contact</h2>
         </div>
 
         <div class="card card-body py-5 bg-secondary">
           <h4 class="mb-0">Send Me a Message</h4>
           <hr />
-          <form>
+          <form
+            action="mailto:bretbaker808@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
             <div class="form-group">
               <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
@@ -277,7 +336,7 @@
               </div>
             </div>
 
-            <button class="btn btn-danger btn-block btn-lg">
+            <button type="submit" class="btn btn-danger btn-block btn-lg">
               <i class="fas fa-paper-plane"></i> Send
             </button>
           </form>
@@ -287,20 +346,18 @@
       <!-- FOOTER -->
       <footer id="main-footer" class="p-5 bg-black text-white">
         <div class="d-flex flex-row justify-content-around align-items-center">
-          <a
-            href="http://linkedin.com"
-            class="btn btn-outline-light"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin"></i> LinkedIn
+          <a href="http://linkedin.com" class="top-small-icons" target="_blank">
+            <i class="fab fa-linkedin fa-2x text-white"></i>
+          </a>
+          <a href="http://linkedin.com" class="top-ss-icons" target="_blank">
+            <i class="fab fa-linkedin fa-lg text-white"></i>
           </a>
           <p>Copyright &copy; <span id="year"></span></p>
-          <a
-            href="http://github.com"
-            class="btn btn-outline-light"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i> GitHub
+          <a href="http://github.com" class="top-small-icons" target="_blank">
+            <i class="fab fa-github fa-2x text-white"></i>
+          </a>
+          <a href="http://github.com" class="top-ss-icons" target="_blank">
+            <i class="fab fa-github fa-lg text-white"></i>
           </a>
         </div>
       </footer>

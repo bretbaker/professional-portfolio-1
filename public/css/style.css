@@ -1,11 +1,7 @@
 body {
   background-image: url('../img/background-1.jpg');
   background-size: cover;
-  font-family: 'Roboto Mono', monospace;
 }
-
-/* font-family: 'Gelasio', serif;
-font-family: 'Roboto Mono', monospace; */
 
 #main-name,
 #job-title,
@@ -35,7 +31,7 @@ font-family: 'Roboto Mono', monospace; */
 }
 
 #text-area {
-  height: 200px;
+  height: 150px;
 }
 
 .bg-black {
@@ -43,8 +39,74 @@ font-family: 'Roboto Mono', monospace; */
   background: #000;
 }
 
+.top-ss-icons,
+.proj-img-sm {
+  display: none;
+}
+
+.pi-sm {
+  display: none !important;
+}
+
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .exp-card {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-icon {
+    display: none;
+  }
+  .exp-card {
+    display: block !important;
+    margin-bottom: 1rem !important;
+  }
+  .exp-container {
+    display: block !important;
+  }
+  .site-source {
+    font-size: 1rem !important;
+  }
+  .proj-img-div {
+    display: block !important;
+    text-align: center !important;
+  }
+  .proj-img {
+    display: none;
+  }
+  .proj-header {
+    text-align: center;
+  }
+  .proj-img-sm {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .second-header,
+  #skills-head,
+  #job-title {
+    font-size: 1.5rem !important;
+  }
+  #main-name {
+    font-size: 2.5rem !important;
+  }
+  .top-small-icons,
+  .pi-norm {
+    display: none !important;
+  }
+  .top-ss-icons,
+  .pi-sm {
+    display: inline-block !important;
+  }
+  .site-source {
+    font-size: 0.9rem !important;
   }
 }
